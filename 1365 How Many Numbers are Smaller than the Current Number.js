@@ -12,11 +12,11 @@ var smallerNumbersThanCurrent = function(nums) {
     bucket[nums[i]] += 1;
   };
   for (let j = 1; j < bucket.length; j++) {
-    bucket[j] += bucket[j-1];
+    bucket[j] += bucket[j - 1];
   };
   let res = [];
   for (let i = 0; i < nums.length; i++) {
-    if (nums[i]) res.push(bucket[nums[i]-1]);
+    if (nums[i]) res.push(bucket[nums[i] - 1]);
     else res.push(0);
   };
   return res;
