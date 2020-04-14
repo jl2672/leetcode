@@ -13,7 +13,7 @@
  */
 
 var createTargetArray = function(nums, index) {
-  res = [nums[0]];
+  let res = [nums[0]];
   for (let i = 1; i < nums.length; i++) {
     res.splice(index[i], 0, nums[i]);
   };
