@@ -6,7 +6,6 @@
  */
 
 var freqAlphabets = function(s) {
-  const dict = new Map();
   const res = [];
   for (let i = 0; i < s.length; i++) {
     if (i < s.length - 2 && s[i + 2] === '#') {
